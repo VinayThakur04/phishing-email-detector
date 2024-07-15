@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Email Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Phishing Email Detector</h1>
+        <form method="POST">
+            <div class="form-group">
+                <label for="from">From:</label>
+                <input type="email" id="from" name="from" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+                <label for="body">Body:</label>
+                <textarea id="body" name="body" rows="5" required></textarea>
+            </div>
+            <div class="button-group">
+                <button type="submit" class="btn-primary">Check Email</button>
+                <button type="submit" class="btn-secondary" name="clear">Clear Report</button>
+            </div>
+        </form>
+        {% if email %}
+        <div class="results">
+            <h3>Results</h3>
+            <p><strong>From:</strong> {{ email.from }}</p>
+            <p><strong>Subject:</strong> {{ email.subject }}</p>
+            <p><strong>Body:</strong> {{ email.body }}</p>
+            <h4>Detection Results:</h4>
+            <ul>
+                {% for rule, result in results.items() %}
+                <li>{{ rule }}: {{ 'Phishing detected' if result else 'No phishing detected' }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+    </div>
+    <div class="extension-ad">
+        <h3>Try Our Chrome Extension</h3>
+        <p><strong>Prefer manual installation?</strong></p>
+        <p>Download the zip file and install the extension manually:</p>
+        <a href="https://github.com/user-attachments/files/16227556/Chrome.Extemsion.zip" class="btn-primary" download>Download Zip File</a>
+        <p>Protect your inbox and enjoy a safer email experience with our advanced phishing email detection technology.</p>
+    </div>
+</body>
+</html>
