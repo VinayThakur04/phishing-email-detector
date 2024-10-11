@@ -69,7 +69,7 @@ Thanks to these wonderful people who have contributed to the project:
 
 <table>
   <tr>
-       <td align="center"><a href="https://github.com/pranjalsingh03"><img src="https://avatars.githubusercontent.com/u/113307818?s=100&v=4" width="100px;" alt=""/><br /><sub><b>Pranjal Singh</b></sub></a><br />🔧🚧</td>
+       <td align="center"><a href="https://github.com/pranjalsingh03"><img src="https://avatars.githubusercontent.com/u/112399218?v=4" width="100px;" alt=""/><br /><sub><b>Pranjal Singh</b></sub></a><br />🔧🚧</td>
     <td align="center"><a href="https://github.com/GauraVYadaV70"><img src="https://avatars.githubusercontent.com/u/118387281?s=100&v=4" width="100px;" alt=""/><br /><sub><b>Gaurav Yadav</b></sub></a><br />💻📖</td>
     <td align="center"><a href="https://github.com/Mandira001"><img src="https://avatars.githubusercontent.com/u/118953526?v=4" width="100px;" alt=""/><br /><sub><b>Mandira Nagar</b></sub></a><br />📝💡</td>
   </tr>
